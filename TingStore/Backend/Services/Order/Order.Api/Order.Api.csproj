@@ -7,7 +7,17 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="8.0.13">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.6.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Order.Application\Order.Application.csproj" />
+    <ProjectReference Include="..\Order.Core\Order.Core.csproj" />
+    <ProjectReference Include="..\Order.Infrastructure\Order.Infrastructure.csproj" />
   </ItemGroup>
 
 </Project>
